@@ -5,6 +5,11 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+
 body {
   font-size: clamp(1.125rem, 1.0494rem + .3782vi, 1.333rem);
   font-family: system-ui;
@@ -16,6 +21,13 @@ body {
 h1 {
   line-height: 1.1;
   font-size: clamp(4rem, 3.0909rem + 4.5455vi, 6.5rem);
+}
+
+a {
+  color: currentColor;
+}
+a:not(:hover) {
+  text-decoration: none;
 }
 
 /* Utility */
@@ -40,11 +52,51 @@ h1 {
 
 /* Main */
 header, footer {
-  text-align: center;
-  padding: 3.25em;
+  padding: 2.15em;
   background-color: #282828;
 }
 main {
   text-align: center;
   padding-block: 2em;
+}
+
+.header__inner,
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .875lh 2em;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 700;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .6lh 2em;
+}
+
+/* Skip link */
+.skip-link:not(:focus) {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+.skip-link {
+  position: absolute;
+  left: clamp(1.05rem, 1rem + .5vw, 1.3rem);
+  top: clamp(1.05rem, 1rem + .5vw, 1.3rem);
+  text-transform: uppercase;
+  text-decoration: none;
 }

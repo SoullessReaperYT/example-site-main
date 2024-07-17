@@ -8,21 +8,51 @@
     <link rel='stylesheet' href='index.css'>
   </head>
   <body>
+    <a href="#main-content" class="[ skip-link ] [ button ]">Main content</a>
     <div class="cover">
-      <header>
-        <div class="wrapper">
-          <p>Header</p>
+      <header role="banner">
+        <div class="header__inner wrapper">
+          <a href="#" class="logo" aria-label="to home">Logo</a>
+          <nav aria-label="primary">
+            <ul role="list">
+              <li>
+                <a href="#">Link 1</a>
+              </li>
+              <li>
+                <a href="#">Link 2</a>
+              </li>
+              <li>
+                <a href="#">Link 3</a>
+              </li>
+              <li>
+                <a href="#footer">#</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </header>
-      <main>
+      <main id="main-content">
         <div class="wrapper flow">
           <h1>Main Content</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore deleniti possimus nemo modi animi sint quasi a expedita porro nobis voluptates nihil beatae assumenda, iure quidem? Laudantium asperiores expedita molestias quisquam corrupti dolor illo odit exercitationem, enim saepe ipsum nihil animi aliquam, quis dicta impedit eum nostrum vero ipsa explicabo quod itaque ea dolore? Maiores libero illum quidem, eius inventore ipsum eligendi ullam incidunt perferendis ipsam voluptas id sequi voluptatum vero. Architecto cumque porro reiciendis perferendis ipsa sequi!</p>
         </div>
       </main>
-      <footer>
-        <div class="wrapper">
-          <p>Footer</p>
+      <footer id="footer" role="contentinfo">
+        <div class="footer__inner wrapper">
+          <a href="#" class="logo" aria-label="to home">Logo</a>
+          <nav aria-label="primary">
+            <ul role="list">
+              <li>
+                <a href="#">Link 1</a>
+              </li>
+              <li>
+                <a href="#">Link 2</a>
+              </li>
+              <li>
+                <a href="#">Link 3</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </footer>
     </div>

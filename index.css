@@ -1,0 +1,40 @@
+/* Global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1.333rem;
+  font-family: system-ui;
+  color: #ffffff;
+  background-color: #181818;
+}
+
+/* Utility */
+.wrapper {
+  max-width: 1000px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+.cover {
+  display: flex;
+  flex-direction: column;
+  min-block-size: 100svh;
+}
+.cover > :is(h1, main, .hero) {
+  margin-block: auto;
+}
+
+/* Main */
+header, footer {
+  text-align: center;
+  padding: 3.25em;
+  background-color: #282828;
+}
+main {
+  text-align: center;
+  padding-block: 2em;
+}
